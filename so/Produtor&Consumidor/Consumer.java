@@ -1,0 +1,31 @@
+import java.util.Random;
+public class Consumer implements Runnable{
+	private static Random generator = new Random();
+	private Buffer sharedLocation;
+	
+	public Consumer(Buffer shared) {
+		sharedLocation = shared;
+	}
+	
+	public void run() {
+		// TODO Auto-generated method stub
+		int sum = 0;
+		
+		for(int count = 1;count <= 10;count++) {
+			try {
+				
+				Thread.sleep(generator.nextInt(3000));
+				sum += sharedLocation.get();
+				System.out.printf("\t\t\t%2d\n", sum);
+				
+			}
+			catch(InterruptedException exception) {
+				exception.printStackTrace();
+			}
+			
+			System.out.printf("\n%s %d.\n%s\n","Consumidor leu todos os valores.", sum, "Consumidor terminou.");
+		}
+	}
+	
+	
+}
