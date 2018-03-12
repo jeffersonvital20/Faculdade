@@ -1,0 +1,11 @@
+C:\Users\jeffe\Documents\projetos\Faculdade\so\FilosofoBarbeiro\FilosofoBarbeiro\FilosofoBarbeiro\obj\Debug\netcoreapp2.0\FilosofoBarbeiro.csprojResolveAssemblyReference.cache
+C:\Users\jeffe\Documents\projetos\Faculdade\so\FilosofoBarbeiro\FilosofoBarbeiro\FilosofoBarbeiro\obj\Debug\netcoreapp2.0\FilosofoBarbeiro.csproj.CoreCompileInputs.cache
+C:\Users\jeffe\Documents\projetos\Faculdade\so\FilosofoBarbeiro\FilosofoBarbeiro\FilosofoBarbeiro\obj\Debug\netcoreapp2.0\FilosofoBarbeiro.AssemblyInfoInputs.cache
+C:\Users\jeffe\Documents\projetos\Faculdade\so\FilosofoBarbeiro\FilosofoBarbeiro\FilosofoBarbeiro\obj\Debug\netcoreapp2.0\FilosofoBarbeiro.AssemblyInfo.cs
+C:\Users\jeffe\Documents\projetos\Faculdade\so\FilosofoBarbeiro\FilosofoBarbeiro\FilosofoBarbeiro\bin\Debug\netcoreapp2.0\FilosofoBarbeiro.deps.json
+C:\Users\jeffe\Documents\projetos\Faculdade\so\FilosofoBarbeiro\FilosofoBarbeiro\FilosofoBarbeiro\bin\Debug\netcoreapp2.0\FilosofoBarbeiro.runtimeconfig.json
+C:\Users\jeffe\Documents\projetos\Faculdade\so\FilosofoBarbeiro\FilosofoBarbeiro\FilosofoBarbeiro\bin\Debug\netcoreapp2.0\FilosofoBarbeiro.runtimeconfig.dev.json
+C:\Users\jeffe\Documents\projetos\Faculdade\so\FilosofoBarbeiro\FilosofoBarbeiro\FilosofoBarbeiro\bin\Debug\netcoreapp2.0\FilosofoBarbeiro.dll
+C:\Users\jeffe\Documents\projetos\Faculdade\so\FilosofoBarbeiro\FilosofoBarbeiro\FilosofoBarbeiro\bin\Debug\netcoreapp2.0\FilosofoBarbeiro.pdb
+C:\Users\jeffe\Documents\projetos\Faculdade\so\FilosofoBarbeiro\FilosofoBarbeiro\FilosofoBarbeiro\obj\Debug\netcoreapp2.0\FilosofoBarbeiro.dll
+C:\Users\jeffe\Documents\projetos\Faculdade\so\FilosofoBarbeiro\FilosofoBarbeiro\FilosofoBarbeiro\obj\Debug\netcoreapp2.0\FilosofoBarbeiro.pdb
