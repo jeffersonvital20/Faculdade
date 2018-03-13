@@ -11,7 +11,11 @@ namespace FilosofoBarbeiro
         {
             EstaEmUso = false;
         }
+        public Garfo[] CriarGarfo(int n)
+        {
+            Garfo[] garfo = new Garfo[n];
+            return garfo;
+        }
 
-        
     }
 }
