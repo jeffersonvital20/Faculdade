@@ -22,7 +22,7 @@ namespace FilosofoBarbeiro
         }
          
 
-        void Filosofo1Come(Filosofo[] filo,Garfo[] garfo)
+        public void Filosofo1Come(Filosofo[] filo,Garfo[] garfo)
         {
             if (garfo[1].EstaEmUso || garfo[garfo.Length].EstaEmUso)
                 return;
@@ -45,7 +45,7 @@ namespace FilosofoBarbeiro
 
         }
 
-        void Filosofo2Come(Filosofo[] filo, Garfo[] garfo, int n)
+        public void FilosofoNCome(Filosofo[] filo, Garfo[] garfo, int n)
         {
 
             if (garfo[1].EstaEmUso || garfo[n].EstaEmUso)
