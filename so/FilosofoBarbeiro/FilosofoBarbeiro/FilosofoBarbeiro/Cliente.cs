@@ -1,18 +1,19 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
-using System.Threading;
 
 namespace FilosofoBarbeiro
 {
-    class Barbeiro
+    class Cliente
     {
         private Barbearia barbearia;
         private bool cortar = true;
+        private String nomeCliente { get; set; }
 
-        public Barbeiro(Barbearia barbearia)
+        public Cliente(Barbearia barbearia, String nome)
         {
             this.barbearia = barbearia;
+            nomeCliente = nome;
         }
 
         public void run()
@@ -26,14 +27,19 @@ namespace FilosofoBarbeiro
                     {
                         sleepTime = ((int)(Math.random() * 5000));
                     } while (sleepTime < 1000);
+
                     Thread.sleep(sleepTime);
-                    barbearia.cortarCabelo();
+                    barbearia.aguardaVez(this);
                 }
                 catch (Exception e)
                 {
                 }
             }
-        }
 
+        }
+        public String nomeCliente()
+        {
+            return nomeCliente;
+        }
     }
 }
