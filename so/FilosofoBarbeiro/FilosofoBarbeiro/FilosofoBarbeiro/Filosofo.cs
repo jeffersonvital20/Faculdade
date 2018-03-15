@@ -22,7 +22,7 @@ namespace FilosofoBarbeiro
         }
          
 
-        public void Filosofo1Come(Filosofo[] filo,Garfo[] garfo)
+        public static void Filosofo1Come(Filosofo[] filo,Garfo[] garfo)
         {
             if (garfo[1].EstaEmUso || garfo[garfo.Length].EstaEmUso)
                 return;

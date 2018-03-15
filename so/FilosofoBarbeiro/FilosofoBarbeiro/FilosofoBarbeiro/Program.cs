@@ -49,7 +49,13 @@ namespace FilosofoBarbeiro
        
         static void Start()
         {
-            Thread[] threadFilosofo1 = new Thread(new ThreadStart(filosofos[0].Filosofo1Come(filosofos,garfos)));
+            Thread[] threadFilosofo = new Thread(new ThreadStart(filosofo.Filosofo1Come(filosofos, garfos)))[0];
+            for (int i = 0; i < numeroFilosofos; i++)
+            {
+                //Thread[] threadFilosofo = new Thread(new ThreadStart(filosofo.Filosofo1Come(filosofos,garfos)))[0];
+                threadFilosofo = new Thread(new ThreadStart(filosofo.FilosofoNCome(filosofos, garfos,numeroFilosofos)))[i];
+            }
+            //Thread[] threadFilosofo = new Thread(new ThreadStart(filosofos[0].Filosofo1Come(filosofos,garfos)));
 
             //Thread threadFilosofo2 = new Thread(new ThreadStart(Filosofo2Come));
 
