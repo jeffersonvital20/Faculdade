@@ -17,6 +17,7 @@ namespace FilosofoBarbeiro
 
         public void run()
         {
+            Random rand = new Random();
             while (cortar)
             {
                 try
@@ -24,9 +25,9 @@ namespace FilosofoBarbeiro
                     int sleepTime;
                     do
                     {
-                        sleepTime = ((int)(Math.random() * 5000));
+                        sleepTime = rand.Next(0,5000); //((int)(Math.random() * 5000));
                     } while (sleepTime < 1000);
-                    Thread.sleep(sleepTime);
+                    Thread.Sleep(sleepTime);
                     barbearia.cortarCabelo();
                 }
                 catch (Exception e)

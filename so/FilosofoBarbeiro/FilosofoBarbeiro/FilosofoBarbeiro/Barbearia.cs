@@ -1,27 +1,29 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Threading;
 
 namespace FilosofoBarbeiro
 {
     class Barbearia
     {
         private int qtdeCadeiras = 5;
-        private boolean dormindo = true;
+        private bool dormindo = true;
         private LinkedBlockingQueue<Cliente> clientesNaFila = new LinkedBlockingQueue<>();
         private int qtdeClienteAtendidos = 0;
-        private List<Cliente> clientesJaAtendidos = new ArrayList<Cliente>();
-        boolean cortando = false;
+        private List<Cliente> clientesJaAtendidos = new List<Cliente>();
+        bool cortando = false;
 
         public synchronized void cortarCabelo()
         {
+            Random rand = new Random();
             try
             {
                 while (clientesNaFila.size() == 0)
                 {
-                    System.out.println("Não tem nenhum cliente esperando, o barbeiro resolveu dormir");
+                    Console.WriteLine("Não tem nenhum cliente esperando, o barbeiro resolveu dormir");
                     wait();
-                    System.out.println("Barbeiro continua seu trabalho..........");
+                    Console.WriteLine("Barbeiro continua seu trabalho..........");
                 }
 
                 String nameCli = clientesNaFila.peek().nomeCliente();
@@ -29,16 +31,16 @@ namespace FilosofoBarbeiro
                 {
                     clientesNaFila.poll();
                     cortando = true;
-                    System.out.println("Aguarde enquando o " + nameCli + " é atendido......");
-                    Thread.sleep((int)(Math.random() * 5000));
+                    Console.WriteLine("Aguarde enquando o " + nameCli + " é atendido......");
+                    Thread.Sleep(rand.Next(0,5000));     //((int)(Math.random() * 5000));
                     qtdeClienteAtendidos++;
-                    System.out.println("Foram atendidos " + qtdeClienteAtendidos + " clientes");
+                    Console.WriteLine("Foram atendidos " + qtdeClienteAtendidos + " clientes");
                 }
                 notifyAll();
             }
-            catch (InterruptedException e)
+            catch (ThreadInterruptedException e)
             {
-                e.printStackTrace();
+                Console.WriteLine(e.StackTrace);
             }
         }
 
